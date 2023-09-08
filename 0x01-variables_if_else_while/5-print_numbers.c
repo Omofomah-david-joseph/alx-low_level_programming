@@ -1,23 +1,19 @@
 /*
- * File: 4-print_alphabt.c
+ * File: 5-print_numbers.c
  * Auth: Omofomah-david-joseph
  */
 
 #include <stdio.h>
 
 /**
- * main - Program that prints the alphabet in lowercases leaving out q and e
+ * main - Program that prints all single digits of base 10
  *
  * Return: Always0 (success)
  */
 int main(void)
 {
-        char letter;
-        for (letter = 'a'; letter <= 'z'; letter++)
-                if (letter != 'q' && letter != 'e')
-                        putchar(letter);
-
-        putchar('\n');
-        return (0);
-}
-~              
+	for (int i = 0; i <= 9; i++)
+		if (i = 0 && i <= 9)
+			printf("%d\n", i);
+	return (0);
+}              
