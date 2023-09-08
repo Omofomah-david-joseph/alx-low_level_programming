@@ -13,7 +13,6 @@
 int main(void)
 {
 	for (int i = 0; i <= 9; i++)
-		if (i = 0 && i <= 9)
-			printf("%d\n", i);
+		printf("%d\n", i);
 	return (0);
 }              
