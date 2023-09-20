@@ -16,14 +16,16 @@ char *_strcat(char *dest, char *src, int n)
 	lengthA = 0;
 	lengthB = 0;
 
-	while (*(dest + lengthA) != '\0')
-		lengthA++;
-	while (*(src + lengthB) != '\0' && lengthA < 97 && lengthB < n)
+	while (dest[lengthA] != '\0')
 	{
-		*(dest + lengthA) = *(src + lengthB);
+		lengthA++;
+	}
+	while (src[lengthB] != '\0' && lengthB < n)
+	{
+		dest[lengthA] = src[lengthB];
 		lengthA++;
 		lengthB++;
 	}
-	*(dest + lengthA) = '\0';
-	return (0);
+	dest[lengthA] = '\0';
+	return (dest);
 }
