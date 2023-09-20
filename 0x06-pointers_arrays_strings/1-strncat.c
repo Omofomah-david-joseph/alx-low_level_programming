@@ -27,5 +27,5 @@ char *_strcat(char *dest, char *src, int n)
 		lengthB++;
 	}
 	*(dest + lengthA) = '\0';
-	return (dest);
+	return (0);
 }
