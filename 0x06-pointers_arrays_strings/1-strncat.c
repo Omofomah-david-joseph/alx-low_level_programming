@@ -11,19 +11,19 @@
  */
 char *_strcat(char *dest, char *src, int n)
 {
-	int A, B;
+	int lengthA, lengthB;
 
-	A = 0;
-	B = 0;
+	lengthA = 0;
+	lengthB = 0;
 
-	while (*(dest + A) != '\0')
-		A++;
-	while (*(src + B) != '\0' && A < 97 && B < n)
+	while (*(dest + lengthA) != '\0')
+		lengthA++;
+	while (*(src + lengthB) != '\0' && lengthA < 97 && lengthB < n)
 	{
-		*(dest + A) = *(src + B);
-		A++;
-		B++;
+		*(dest + lengthA) = *(src + lengthB);
+		lengthA++;
+		lengthB++;
 	}
-	*(dest + A) = '\0';
+	*(dest + lengthA) = '\0';
 	return (0);
 }
