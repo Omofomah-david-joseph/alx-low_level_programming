@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * *_strcat - concatenates two strings
+ * *_strncat - concatenates two strings
  * stating size of the second string
  * @dest: string with concatenation
  * @src: string to be concatenated
  * @n: size of the second string
- * Return: Always 0 (success)
+ * Return: dest
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int lengthA, lengthB;
 
