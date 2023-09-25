@@ -4,10 +4,11 @@
  * _strspn - gets the length of a prefix substring
  * @s: the string to be searched
  * @accept: the prefix to be measured
+ *
  * Return: the number of bytes in s which
  * consist only of bytes from accept
  */
-unsigned in _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 0;
 	int index;
@@ -16,7 +17,7 @@ unsigned in _strspn(char *s, char *accept)
 	{
 		for (index = 0; accept[index]; index++)
 		{
-			if (*s == accep[index])
+			if (*s == accept[index])
 			{
 				bytes++;
 				break;
