@@ -27,16 +27,16 @@ int **alloc_grid(int width, int height)
 
 	for (a = 0; a < height; a++)
 	{
-		pro[a] = mallo(sizeof(int) * width);
+		pro[a] = malloc(sizeof(int) * width);
 		if (pro[a] == NULL)
 		{
 			for (; a >= 0; a--)
-				be(pro[a]);
-			be(pro);
+				free(pro[a]);
+			free(pro);
 			return (NULL);
 		}
 	}
-	for (a = 0, a < height; a++)
+	for (a = 0; a < height; a++)
 	{
 		for (z = 0; z < width; z++)
 			pro[a][z] = 0;
