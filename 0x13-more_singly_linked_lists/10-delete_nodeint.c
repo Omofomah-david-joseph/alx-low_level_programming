@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delte_nodeint_at_index - 
+ * delete_nodeint_at_index - deletes nodes at the specified index on list
  * @head: pointer of the head pointer that points
  * to the first node
  * @index: node index to be deleted
@@ -20,18 +20,18 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		node = *head;
 		*head = (*head)->next;
 		free(node);
-		return(1);
+		return (1);
 	}
 
 	tmp = *head;
 	for (dc = 0; dc < index - 1 && tmp != NULL && index != 0; dc++)
 		tmp = tmp->next;
 
-	if (tmp ==NULL || tmp->next == NULL)
+	if (tmp == NULL || tmp->next == NULL)
 		return (-1);
 	node = tmp->next;
 	tmp->next = node->next;
 	free(node);
 
-	return(1);
+	return (1);
 }
