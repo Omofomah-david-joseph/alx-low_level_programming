@@ -4,7 +4,7 @@
  * print_bi - prints binary representation of a number
  * recussively
  * @n: number to print in binary
- * Return: binary representation 
+ * Return: binary representation
  */
 void print_bi(unsigned long int n)
 {
