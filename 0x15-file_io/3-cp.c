@@ -4,27 +4,27 @@
  * error_file - prints an error message
  * @file_from: file from which text is copied
  * @file_to: file to which text is copied
- * @argv:
+ * @argv: pointer to character
  * Return: if the number of argument is not the correct one, exit with code
  */
 void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (file_to == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 		exit(99);
 	}
 }
 
 /**
  * main - copies the content of a file to another
- * @argc:
- * @argv:
+ * @argc: argument count
+ * @argv: pointer to character
  * Return: if you can not create or if write files, exit with code
  */
 int main(int argc, char *argv[])
