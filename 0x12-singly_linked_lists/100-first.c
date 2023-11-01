@@ -1,10 +1,10 @@
 #include "lists.h"
-void comefirst(void)__attribute__((constructor));
+void ComeFirst(void)__attribute__((constructor));
 
 /**
- * comefirst - prints a string before the main function is executed
+ * ComeFirst - prints a string before the main function is executed
  */
-void comefirst(void)
+void ComeFirst(void)
 {
 	printf("You're beat! and yet, you must allow, \n");
 	printf("I bore my house upon my back!\n");
